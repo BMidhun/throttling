@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Users | Throttling</title>
+
+    <style>
+        .box-container{
+            width: 700px;
+            height: 700px;
+            border: 1px solid #555;
+            position: relative;
+        }
+
+        #box {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: coral;
+            top: 0;
+            left: 0;
+            transform: translate(0px,0px);
+        }
+
+        #box:-moz-drag-over{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+      <div class="main">
+            <div>
+                <button type="button" id="generate-btn">Generate a username</button>
+            </div>
+            
+            <h3 id="username"></h3>
+      </div>
+
+      <div class="box-container">
+            <div id="box" draggable="true"></div>
+      </div>
+</body>
+<script src="script.js"></script>
+</html>
