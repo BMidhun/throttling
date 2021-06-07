@@ -22,7 +22,7 @@ function throttle(fn, interval) {
 
             setTimeout(() => {
                 shouldExecute = true;
-            }, interval);    // should execute will be set to true after the interval is reached. In between the interval, if the user clicks the btn the API call won't be triggered. 
+            }, interval);    // shouldExecute will be set to true after the interval is reached. In between the interval, if the user clicks the btn the API call won't be triggered. 
 
         }
     }
